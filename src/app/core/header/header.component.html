@@ -1,0 +1,22 @@
+<div class="header-menu">
+<a href="#" class="logo">
+    <img src="{{myLogo}}" alt="">
+</a>
+<nav class="main-menu">
+    <div>
+        <ul class="menu-ul">
+            <li>
+                <a>Home</a>
+            </li>
+            <li *ngIf="isLogged"><a>Add new Item</a></li>
+            <li><a>All Items</a></li>
+        </ul>
+        <ul class="login-logout">
+            <li *ngIf="!isLogged"><a routerLink="/login">Login</a></li>
+            <li *ngIf="isLogged"><a href="">Hello, [username]@gmail.com</a></li>
+            <li *ngIf="!isLogged"><a routerLink="/register">Register</a></li>
+            <li *ngIf="isLogged"><a (click)="logoutHandler()">Logout</a></li>
+        </ul>
+    </div>
+</nav>
+</div>

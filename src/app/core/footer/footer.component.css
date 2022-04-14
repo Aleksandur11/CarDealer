@@ -1,0 +1,19 @@
+p{
+    width: 50%;
+    color: #fff;
+    margin-left: 5%;
+}
+ul{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+div{
+    display: flex;
+}
+.copyright{
+    background-color: #000;
+}
